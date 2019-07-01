@@ -20,7 +20,7 @@ class DeclarationBundlerPlugin
 	apply(compiler)
 	{
 		//when the compiler is ready to emit files
-		compiler.hooks.emit.tapAsync('DeclarationBundlerPlugin', (compilation,callback) =>
+		compiler.hooks.emit.tapAsync('DeclarationBundlerPlugin', (compilation, callback) =>
 		{
 			//collect all generated declaration files
 			//and remove them from the assets that will be emited
@@ -58,8 +58,7 @@ class DeclarationBundlerPlugin
 		for(var fileName in declarationFiles)
 		{
 			var declarationFile = declarationFiles[fileName];
-			var data = declarationFile._value;
-
+			var data = declarationFile.source();
 			var lines = data.split("\n");
 			var i = lines.length;
 
