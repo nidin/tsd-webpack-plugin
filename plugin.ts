@@ -59,7 +59,7 @@ class DeclarationBundlerPlugin {
         var line = lines[i]
 
         // exclude empty lines
-        var excludeLine: boolean = line == ''
+        var excludeLine: boolean = line === ''
 
         // exclude export statements
         excludeLine = excludeLine || line.indexOf('export =') !== -1
