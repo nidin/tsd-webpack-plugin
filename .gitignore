@@ -1,3 +1,4 @@
 node_modules
-yarn.lockplugin.js
+yarn.lock
+plugin.js
 package-lock.json
