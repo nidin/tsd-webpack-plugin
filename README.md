@@ -21,11 +21,11 @@ This plugin was developed as an extention to the [ts-loader](https://github.com/
 
 # Installing
 
-    yarn add -D typescript-declaration-generator
+    yarn add -D tsd-webpack-plugin
 
 or
 
-    npm install typescript-declaration-generator
+    npm install tsd-webpack-plugin
 
 Here is an example setup:
 
