@@ -94,10 +94,31 @@ jobs:
           paths:
             - dist
             
-  publish_packages:
+  publish_pkg:
     executor: node
     steps:
       - *restore_repo
       - *restore_yarn_cache
       - *attach_workspace
       - run: yarn run publish
+      
+      
+workflows:
+  version: 2
+
+  default:
+    jobs:
+      - checkout_code
+      - install_pkg:
+          requires:
+          - checkout_code
+      - lint:
+          requires:
+            - install_pkg
+      - build:
+          requires:
+            - install_pkg
+            - lint
+      - publish_pkg:
+          requires:
+            - build
