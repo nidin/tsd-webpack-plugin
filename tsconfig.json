@@ -2,7 +2,5 @@
   "compilerOptions": {
     "module": "commonjs"
   },
-  "files": [
-    "./plugin.ts"
-  ]
+  "files": ["./plugin.ts"]
 }

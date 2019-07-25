@@ -3,11 +3,11 @@ module.exports = {
     browser: true
   },
   extends: ["standard"],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: "module"
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ["@typescript-eslint"],
   root: true
-}
+};
