@@ -21,12 +21,12 @@ references:
         - v1-repo
 
   restore_yarn_cache: &restore_yarn_cache
-    restore-cache: 
+    restore_cache: 
       keys:
         - v1-yarn-cache-{{ checksum "yarn.lock" }}-{{ .Environment.CACHE_VERSION }}
 
   save_yarn_cache: &save_yarn_cache
-    save-cache: 
+    save_cache: 
       key: v1-yarn-cache-{{ checksum "yarn.lock" }}-{{ .Environment.CACHE_VERSION }}
       paths:
         - ~/.npmrc
