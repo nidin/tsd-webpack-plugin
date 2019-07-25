@@ -100,7 +100,7 @@ jobs:
       - *restore_repo
       - *restore_yarn_cache
       - *attach_workspace
-      - run: yarn run publish
+      - run: yarn publish
       
       
 workflows:
