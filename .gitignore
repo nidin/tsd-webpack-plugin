@@ -1,4 +1,5 @@
 node_modules
-yarn.lock
 plugin.js
 package-lock.json
+.history
+.vscode
