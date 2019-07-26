@@ -2,3 +2,6 @@
 .circleci
 .eslintignore
 .eslintrc.js
+.vscode
+.history
+.prettierignore
