@@ -74,7 +74,7 @@ Which generates (when using the declaration=true flag for the typescript compile
     
 Which with the following webpack.config.js
 
-    var TypescriptDeclarationGenerator = require('typescript-declaration-generator');
+    var TypescriptDeclarationGenerator = require('tsd-webpack-plugin');
     module.exports = {
         entry: './src/init.ts',
         output: {
