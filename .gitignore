@@ -1,5 +1,5 @@
 node_modules
-plugin.js
+index.js
 package-lock.json
 .history
 .vscode
