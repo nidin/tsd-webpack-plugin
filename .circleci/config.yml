@@ -92,7 +92,7 @@ jobs:
       - persist_to_workspace:
           root: *workspace_root
           paths:
-            - plugin.js
+            - index.js
             
   publish_pkg:
     executor: node
